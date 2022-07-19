@@ -2,9 +2,11 @@ import Header from "./Header";
 
 const Layout = ({ children }) => {
   return (
-    <div className="container mx-auto bg-blue-900 h-screen">
+    <div className="mx-auto bg-blue-400 h-screen flex flex-col gap-y-4 justify-center items-center">
       <Header />
-      <main>{children}</main>
+      <main className="rounded-md bg-blue-800 w-1/2 max-w-md h-64">
+        {children}
+      </main>
     </div>
   );
 };
